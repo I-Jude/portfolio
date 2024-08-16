@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>My portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="images/image.jpg" alt="" >
+            <h3 class="name">Jude Iyadurai</h3>
+            <p class="post">Full Stack Developer</p>
+       </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu" class="fas fa-bars"></div>
+    <section class="home" id="home">
+        <h3>HI THERE!</h3>
+        <h1>I'M <span>Jude Iyadurai</span></h1>
+        <p>I'm a Full Stack Developer, passionate about building scalable and efficient applications using modern web technologies. I enjoy working on challenging projects and collaborating with others to create innovative solutions.</p>
+        <a href="#about" ><button class="btn">About me<i class="fas fa-user"></i></button></a>
+    </section>
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name :</span> Jude Iyadurai I</h3>
+                <h3><span>age :</span> 20</h3>
+                <h3><span>qualification :</span> B.TECH Information Technology</h3>
+                <h3><span>Intrest :</span> Web development</h3>
+                <h3><span>Language :</span> Tamil, English</h3>
+                <a href="#"><button class="btn">Download CV<i class="fas fa-download"></i></button></a> 
+            </div>
+            <div class="counter">
+                <div class="box">
+                    <span>Intern</span>
+                    <h3>at Shanmuga technologies</h3>
+                </div>
+                <div class="box">
+                    <span>4+</span>
+                    <h3>Project completed</h3>
+                </div>
+                <div class="box">
+                    <span>5+</span>
+                    <h3>Certifications completed</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="heading"><span>My</span> Skills</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Python</h3>
+            </div>
+            <div class="box">
+                <h3>Java</h3>
+            </div>
+            <div class="box"><h3>C</h3></div>
+            <div class="box"><h3>OOPS</h3></div>
+            <div class="box"><h3>SQL</h3></div>
+            <div class="box"><h3>Teamwork</h3></div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <h1 class="heading">My<span> Projects</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Smart city services monitoring</h3>
+                <p>Developed an application to monitor and manage urban infrastructure, providing real-time insights through map to improve city services and maintenance</p>
+                <a href="https://github.com/I-Jude">github</a>
+            </div>
+            <div class="box">
+                <h3>Visulizers</h3>
+                <p>Developed interactive Python tools for visualizing a Minimum Spanning Tree and a Graph Coloring . Both tools are user-friendly, enhancing understanding through hands-on learning.</p>
+                <a href="https://github.com/I-Jude">github</a>
+            </div>
+        </div> 
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span> Me</h1>
+        <div class="row">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> jude93612@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +919361275138</p>
+                <p><i class="fas fa-phone"></i> +111-222-3333</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kovilpatti, India 628503</p>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <input type="text" placeholder="Name" class="box">
+                    <input type="email" placeholder="Email" class="box">
+                    <input type="text" placeholder="Description" class="box">
+                    <textarea placeholder="Message" class="box"></textarea>
+                    <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>    
+</body>
+<script>
+    $(document).ready(function(){
+        $('#menu').click(function(){
+            $(this).toggleClass('fa-times');
+            $('header').toggleClass('toggle');    
+        });
+
+        $(window).on('scroll load', function(){
+            
+            $('#menu').removeClass('fa-times');
+            $('header').removeClass('toggle');   
+        });
+    });
+</script>
+</html> 
