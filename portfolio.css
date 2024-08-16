@@ -318,15 +318,27 @@ header .navbar ul li a:hover{
 
 .contact-form .box {
     width: 100%;
-    padding: 1.5rem;
+    padding: 2.5rem;
+    
     margin: 1rem 0;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+.contact-form .box1 {
+    width: 100%;
+    padding: 2.5rem;
+    height: 19rem;
+    margin: 1rem 0;
+    margin: 1rem 0;
+    font-size: 2rem;
     background: #222;
     color: #fff;
     border-radius: 5px;
 }
 
-.contact-form .box::placeholder {
+.contact-form .box::placeholder ,.box1::placeholder {
     color: #aaa;
 }
 
@@ -369,40 +381,91 @@ header .navbar ul li a:hover{
     body{
         padding: 0px;
     }
-}
-@media (max-width: 930){
-    .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .contact .row {
+        flex-direction: column;
+        margin: 0;
+    }
+    .contact-info, .contact-form {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+    .home{
+        padding: 0rem 2rem;
         text-align: center;
+    }
+    .about .row .info{
+        padding: 1rem;
+        text-align: center;
+    }
+    .about .row .counter .box{
+        margin: 2rem;
+    }
+    .skills .box-container, .project .box-container{
+        padding: 5rem 1rem;
+        margin: 0;
+    }
+    .project .box-container .box, .skills .box-container .box{
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding: 0rem 1rem;
+    }
+    .home h1{
+        font-size: 4rem;
+    }
+    .home p{
+        font-size: 1.6rem;
+    }
+    .about .row .info h3{
+        font-size: 2rem;
+    }
+    .skills .box-container .box , .box1{
+        font-size: 3rem;
+    }
+    .contact .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
     }
     .contact .row {
         flex-direction: column;
-        text-align: center;
+        margin: 0;
+        align-items: center;
     }
-
-    .contact-info, .contact-form {
+     .contact-form {
         flex: 1 1 100%;
-        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .contact-info .h3{
+        margin: 5rem;
+    }
+    .contact-form .box {
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .contact-form .box1 {
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .contact-form .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 1.8rem;
+    }
+    .home h1{
+        font-size: 3.2rem;
+    }
+    .home p{
+        font-size: 1.4rem;
     }
 }
-@media (max-width: 400px){
-    header{
-        width: 100vw;
-    }  
-    .heading{
-        margin: 0 3rem;
-    }   
-    .about .row .counter .box{
-        width: 100%;
-        margin: 0rem 0;
-    }
-    .skills .box-container .box{
-
-        margin: 0rem 0;
-    }
-
-
-}
-
